@@ -5,13 +5,13 @@ public class SuperCat {
     private String furColor;
     protected int age;
 
-    public SuperCat(String name, String furColor, int age) {
+    protected SuperCat(String name, String furColor, int age) {
         this.name = name;
         this.furColor = furColor;
         this.age = age;
     }
 
-    public String tellYourAttributes(String checkStr) {
+    protected String tellYourAttributes(String checkStr) {
         switch (checkStr) {
             case "#name":
                 return this.name;
